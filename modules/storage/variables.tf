@@ -46,3 +46,9 @@ variable "bucket_policy_only" {
   type        = bool
   default     = false
 }
+
+variable "enable_versioning" {
+  description = "Enable versioning on the bucket or not."
+  type        = bool
+  default     = false
+}

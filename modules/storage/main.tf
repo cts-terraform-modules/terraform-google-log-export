@@ -38,6 +38,9 @@ resource "google_storage_bucket" "bucket" {
   location           = var.location
   force_destroy      = true
   bucket_policy_only = var.bucket_policy_only
+  versioning {
+    enabled = var.enable_versioning
+  }
 }
 
 #--------------------------------#
